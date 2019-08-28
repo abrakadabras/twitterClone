@@ -1,0 +1,204 @@
+// Place all the styles related to the Tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background-color: rgb(240, 239, 239);
+  }
+  
+  .tablecontainer {
+    background-color: white;
+  }
+  
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .imgtop {
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    height: 320px;
+    width: 1500px;
+  }
+  
+  .img-circle {
+    z-index: 3;
+    margin: -120px 10px 0px 50px;
+    border: 3px solid white;
+    height: 200px;
+    width: 200px;
+  }
+  
+.row {
+    float: none;
+}
+  .table {
+    border-radius: 5px;
+    width: 40%;
+    margin: -110px auto;
+    float: none;
+    text-align: justify;
+  }
+  
+  td {
+    font-size: 22px;
+  }
+  
+  .cont {
+    margin-top: 150px;
+  }
+  
+  .topul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+  
+  .lic {
+    float: left;
+  }
+  
+  .lic {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .well {
+    background-color: white;
+  }
+  
+  .forbutton {
+    margin-left: 1280px;
+    margin-top: 50px;
+  }
+  
+  .contentcont {
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: -100px;
+  }
+  
+  .twitlist {
+    list-style: none;
+    list-style-position: unset;
+    margin-left: -20px;
+  }
+  
+  .litwitlist {
+      line-height: 25px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .picrow,
+  .picrow2 {
+    width: 200px;
+  }
+  
+  .footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    font-weight: bolder;
+    font-size: 8px;
+  }
+  
+  .footerli {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .panel-footer {
+      background-color: white;
+  }
+  
+//   @media (max-width: 700px) {
+//     .contentcont {
+//       margin-top: -160px;
+//     }
+  
+//     .tablecontainer {
+//       display: flex;
+//       margin-top: 110px;
+//       width: auto;
+//       font-size: 10px;
+//     }
+  
+//     td {
+//       font-size: 10px;
+//     }
+  
+//     .topper {
+//       font-size: 12px;
+//     }
+  
+//     .forbutton {
+//       margin: auto;
+//       padding: 0px;
+//     }
+  
+//     .picrow,
+//     .picrow2 {
+//       width: 100px;
+//     }
+//   }
+
+  .nav-under {
+     border: 1px solid black;
+      z-index: 2;
+      margin-top: -110px;
+     
+  }
+  
+  .follow-button {
+      
+      float: right;
+  }
+  
+
+
+  .final_col {
+      display: flex;
+      align-content: flex-end;
+  }
+
+  .final-sec {
+      display: flex;
+      align-content: flex-end;
+  }
+  
+//   @media (max-width: 900px) {
+//     .forbutton {
+//       float: right;
+//       margin-top: 20px;
+//       margin: auto;
+//       padding: 0px;
+//     }
+  
+//     .topul {
+//       font-size: 12px;
+//     }
+//   }
+  
+@media (max-width: 600px) {
+    .right-side {
+        display: none;
+        color: red;
+        background-color: red;
+    }
+}

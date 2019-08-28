@@ -1,0 +1,15 @@
+<%= render "feed" %>
+
+<!-- middle start -->
+
+    <div class="col-md-6 middlecont topper">
+        <% @user.tweets.each do |tweet| %>
+            <div>
+                <p>@<%= @user.username %></p>
+                <p><%= tweet.message.html_safe %></p>
+            </div>
+
+        <% end %>
+    </div>
+
+<%= render  "feed_two" %>
