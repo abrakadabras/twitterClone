@@ -1,15 +1,82 @@
-<%= render "feed" %>
+
+
+
+<!-- header pic -->
+<%= image_tag("/assets/sunset.jpg",  alt: "like", class: "img-responsive imgtop") %>
+
+<!--profile picture-->
+<%= image_tag profile_pic(@user), class: "user-pic-md img-circle" %>
+
+<!-- content starts -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h1><%= @user.username %></h1>
+            <p>
+                @<%= @user.username %><br />
+                What's Happening?
+            </p>
+            <ul class="twitlist">
+                <li class="litwitlist"><i class="glyphicon glyphicon-map-marker"></i> Everywhere</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-link"></i> about.twitter.com</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-map-marker"></i> View Broadcast</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-calendar"></i> Joined this date</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-gift"></i> Born this date</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-picture"></i> This many pictures</li>
+            </ul>
+        </div>
 
 <!-- middle start -->
 
     <div class="col-md-6 middlecont topper">
         <% @user.tweets.each do |tweet| %>
-            <div>
-                <p>@<%= @user.username %></p>
-                <p><%= tweet.message.html_safe %></p>
-            </div>
+           <%= render  "tweets/tweet", tweet: tweet %>
 
         <% end %>
     </div>
 
-<%= render  "feed_two" %>
+
+
+        <!--row 3-->
+        <div class="col-md-3">
+            <div class="well">
+                <h1>New To Twitter?</h1>
+                <p>
+                    Sign up now to get your own<br />
+                    personalized timeline! <br /><br />
+                    <button type="button" class="btn btn-primary btn-lg active">
+                        Sign Up!
+                    </button>
+                </p>
+            </div>
+            <div class="well">
+                <h1>You May Also Like?</h1>
+                <p>
+                    <br>
+                    Follow these cool accouunts now!<br />
+                    <br /><br />
+                    <span class="bold">
+                        <img src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/youtube-icon_64x64.png"
+                            alt="" srcset=""> Youtube @youtube
+                        <br><br>
+                        <img src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/twitter-icon_64x64.png"
+                            alt="" srcset=""> Twitter @twitter
+                    </span>
+                </p>
+
+            </div>
+
+            <footer>
+                <ul class="footer">
+                    <li class="footerli"> policy </li>
+                    <li class="footerli"> help </li>
+                    <li class="footerli"> contact </li>
+                    <li class="footerli"> resources </li>
+                </ul>
+        </footer>
+        </div>
+        
+    </div>
+</div>
+
