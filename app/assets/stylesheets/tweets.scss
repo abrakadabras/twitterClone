@@ -168,7 +168,62 @@ td {
   padding: 20px 20px; 
 }
 
+.sign_up_page {
+  padding: 20px 20px;
+}
 
+.new_tweet_page {
+  padding: 20px 20px;
+}
+
+.all_tweets_page {
+  padding: 20px 20px;
+  letter-spacing: 2px;
+}
+
+.edit-page {
+  padding: 20px 20px;
+}
+
+.forgot_pass_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot_pass_panel {
+  margin: 90px 20px;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+
+
+// .social:hover {
+//   background-color: white;
+//   transform: scale(1.1);
+//   -webkit-transform: scale(1.1);
+//   -moz-transform: scale(1.1);
+//   -o-transform: scale(1.1);
+// }
+// .social {
+//  background-color: white;
+//   transform: scale(0.8);
+//   -webkit-transform: scale(0.8);
+//   /* Browser Variations: */
+  
+//   -moz-transform: scale(0.8);
+//   -o-transform: scale(0.8);
+//   transition-duration: 0.5s;
+//   -webkit-transition-duration: 0.5s;
+//   -moz-transition-duration: 0.5s;
+//   -o-transition-duration: 0.5s;
+// }
+
+.social {
+  background-color: white;
+}
 
 
 @media (max-width: 600px) {

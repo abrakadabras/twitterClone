@@ -15,10 +15,14 @@
             <h1><%= @user.username %></h1>
             <p>
                 @<%= @user.username %><br />
-                What's Happening?
+                <br>
+                <%= @user.bio %>
+
             </p>
             <ul class="twitlist">
-                <li class="litwitlist"><i class="glyphicon glyphicon-map-marker"></i> Everywhere</li>
+                <li class="litwitlist"><i class="glyphicon glyphicon-map-marker"></i> 
+                    <%= @user.location %>
+                </li>
                 <li class="litwitlist"><i class="glyphicon glyphicon-link"></i> about.twitter.com</li>
                 <li class="litwitlist"><i class="glyphicon glyphicon-map-marker"></i> View Broadcast</li>
                 <li class="litwitlist"><i class="glyphicon glyphicon-calendar"></i> Joined this date</li>
