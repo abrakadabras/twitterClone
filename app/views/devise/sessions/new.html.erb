@@ -1,13 +1,11 @@
 <div class="container log_container">
   <div class="row log_row">
-    <div class="col-lg-1"></div>
 
     <div class="col-lg-5 text-center">
       <div class="well">
         <h2 class="log">Log in</h2>
 
-        <%= form_for(resource, as: resource_name, url:
-        session_path(resource_name)) do |f| %>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
           <%= f.label :email %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -27,7 +25,8 @@
         <div class="actions">
           <%= f.submit "Log in" %>
         </div>
-        <% end %> <%= render "devise/shared/links" %>
+        <% end %>
+        <%= render "devise/shared/links" %>
       </div>
     </div>
 
@@ -42,15 +41,11 @@
             <span class="bold">
               <img
                 src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/youtube-icon_64x64.png"
-                alt=""
-                srcset=""
-              />
+                alt="" srcset="" />
               Youtube @youtube <br /><br />
               <img
                 src="https://68ef2f69c7787d4078ac-7864ae55ba174c40683f10ab811d9167.ssl.cf1.rackcdn.com/twitter-icon_64x64.png"
-                alt=""
-                srcset=""
-              />
+                alt="" srcset="" />
               Twitter @twitter
             </span>
           </p>
