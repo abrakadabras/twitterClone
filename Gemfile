@@ -11,7 +11,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 # easy file attachment manager, goes with carrierwave
 gem 'paperclip'
-# bootstrap sass
+# bootstrap and sass
 gem 'bootstrap-sass'
 # font-awesome glphicons
 gem 'font-awesome-rails'

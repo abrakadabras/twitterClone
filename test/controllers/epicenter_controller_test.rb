@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class EpicenterControllerTest < ActionDispatch::IntegrationTest
+  
   test "should get feed" do
     get epicenter_feed_url
     assert_response :success
